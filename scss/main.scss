@@ -1,0 +1,95 @@
+$paragraph_color: #800080;
+$card_color: #fff;
+%card-shared {
+        font-size: 16px;
+            width: 300px;
+           margin: 10px;
+            padding: 10px;
+        color: $card_color;
+        background: darken($paragraph_color, 10%)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: lighten($paragraph_color, 70%);
+}
+
+.container {
+    
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+    h1 {
+        margin: 20px 0;
+        color:green;
+        
+    }
+    
+    p {
+        font-size: 20px;
+        color: $paragraph_color;
+    }
+    
+    .flexbox {
+        display: flex;
+        
+        #card-one {
+            @extend %card-shared;
+            
+        }
+        #card-two {
+            @extend %card-shared;
+        }
+        #card-three{
+            @extend %card-shared;
+            border: solid green 2px;
+        }
+        
+      
+    }
+    .image-container{
+        display: flex;
+        justify-content: center;
+        margin: 50px;
+        img {
+            width: 300px;
+        height: auto;
+            
+        }
+        
+    }
+    
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    margin: 0;
+    padding: 10px;
+    color: $card-color;
+    font-size: 8px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70px;
+    background: darken($paragraph_color, 10%);
+
+        .checklist {
+            display: flex;
+            align-items: center;
+        margin-top: 2px;
+            img{
+                padding: 2px;
+            }
+            }
+
+}

@@ -1,0 +1,58 @@
+.container .flexbox #card-one, .container .flexbox #card-two, .container .flexbox #card-three {
+  font-size: 16px;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+  background: #4d004d; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffe6ff; }
+
+.container {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container h1 {
+    margin: 20px 0;
+    color: green; }
+  .container p {
+    font-size: 20px;
+    color: #800080; }
+  .container .flexbox {
+    display: flex; }
+    .container .flexbox #card-three {
+      border: solid green 2px; }
+  .container .image-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px; }
+    .container .image-container img {
+      width: 300px;
+      height: auto; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 70px;
+  background: #4d004d; }
+  footer .checklist {
+    display: flex;
+    align-items: center;
+    margin-top: 2px; }
+    footer .checklist img {
+      padding: 2px; }
